@@ -227,8 +227,6 @@ preinstall_l2tp(){
         fi
     fi
     echo
-    echo "请输入ip范围:"
-    read -p "(默认范围: 192.168.18):" iprange
     [ -z ${iprange} ] && iprange="192.168.18"
 
     echo "请输入预共享密钥:"
