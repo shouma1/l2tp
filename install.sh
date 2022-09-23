@@ -238,7 +238,6 @@ preinstall_l2tp(){
     echo "Client Remote IP Range:${iprange}.2-${iprange}.254"
     echo "PSK:${mypsk}"
     echo
-    char=`get_char`
 
 }
 
@@ -298,7 +297,6 @@ install_l2tp(){
 
         compile_install
     elif check_sys packageManager yum; then
-        echo "Adding the EPEL repository..."
         yum -y install epel-release yum-utils
         [ ! -f /etc/yum.repos.d/epel.repo ] && echo "Install EPEL repository failed, please check it." && exit 1
         yum-config-manager --enable epel
