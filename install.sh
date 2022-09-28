@@ -229,8 +229,8 @@ preinstall_l2tp(){
     echo [ -z ${iprange} ] && iprange="192.168.18"
     echo [ -z ${mypsk} ] && mypsk="user"
     echo [ -z ${username} ] && username="user"
-    password=`10010`
-    echo [ ! -z ${tmppassword} ] && password="10010"
+    password=`123456`
+    echo [ ! -z ${tmppassword} ] && password="123456"
 
     echo
     echo "ServerIP:${IP}"
